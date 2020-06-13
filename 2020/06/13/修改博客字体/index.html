@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>修改博客字体 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="假设我的博客在D盘的blog目录下，那么博客的主题就是该目录下的themes目录 要怎么修改博客主题的一些字体配置呢？ 例如我本机的需要配置，就需要进入到下面的路径下： 1D:\blog\themes\landscape\source\css  在该路径下可以看到很多文件，如下：  可以看到上面的有关标记，那么我们修改博客主题的字体大小，就是修改 _variables.styl 文件里的 font">
+<meta property="og:type" content="article">
+<meta property="og:title" content="修改博客字体">
+<meta property="og:url" content="http://yoursite.com/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="假设我的博客在D盘的blog目录下，那么博客的主题就是该目录下的themes目录 要怎么修改博客主题的一些字体配置呢？ 例如我本机的需要配置，就需要进入到下面的路径下： 1D:\blog\themes\landscape\source\css  在该路径下可以看到很多文件，如下：  可以看到上面的有关标记，那么我们修改博客主题的字体大小，就是修改 _variables.styl 文件里的 font">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/1592018844292.png">
+<meta property="article:published_time" content="2020-06-13T03:40:56.372Z">
+<meta property="article:modified_time" content="2020-06-13T03:42:38.966Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/1592018844292.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-修改博客字体" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/" class="article-date">
+  <time datetime="2020-06-13T03:40:56.372Z" itemprop="datePublished">2020-06-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      修改博客字体
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>假设我的博客在D盘的blog目录下，那么博客的主题就是该目录下的themes目录</p>
+<p>要怎么修改博客主题的一些字体配置呢？</p>
+<p>例如我本机的需要配置，就需要进入到下面的路径下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog\themes\landscape\<span class="built_in">source</span>\css</span><br></pre></td></tr></table></figure>
+
+<p>在该路径下可以看到很多文件，如下：</p>
+<p><img src="/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/1592018844292.png" alt="1592018844292"></p>
+<p>可以看到上面的有关标记，那么我们修改博客主题的字体大小，就是修改 <code>_variables.styl</code> 文件里的 font-size，而且还可以修改 段落行高（line-height）、标题行高（line-height-title）等等。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/" data-id="ckbd3ecpa000140qo2yc2bcn3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/13/%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">博客无法显示本地图片问题</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/13/%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E5%AD%97%E4%BD%93/">修改博客字体</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98/">博客无法显示本地图片问题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/%E5%B7%A5%E5%8E%82%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">工厂设计模式</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">单例模式</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
